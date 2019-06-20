@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Hoteller</title>
+    <link rel="stylesheet" href="all.min.css" type="text/css">
+    <link rel="stylesheet" href="Hoteller.css" type="text/css">
+</head>
+<body>
+<header>
+    <section>
+        <div class="nav-container">
+            <img id="logo" src="images/logo.png" alt="Logo">
+            <div id="nav-links">
+                <div class="dropdown">
+                    <a href="#home">HOME</a>
+                    <div class="dropdown-content">
+                        <a href="#">HOME-RESORTE</a>
+                        <a href="#">HOME-SPA</a>
+                        <a href="#">HOME-VILlAA</a>
+                        <a href="#">HOME-BUSINESS</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#accomodation">ACCOMODATIONS</a>
+                    <div class="dropdown-content">
+                        <a href="#">RESERVATION</a>
+                        <a href="#">ROOMS3-COLUMNS</a>
+                        <a href="#">ROOMS2-COLUMNS</a>
+                        <a href="#">ROOMS1-COLUMNS</a>
+                        <a href="#">VILlAA-DETAILS</a>
+                        <a href="#">SINGLE-ROOM</a>
+                    </div>
+                </div>
+                <a href="#dining">DINING</a>
+                <a href="#spa">SPA</a>
+                <a href="#gallery">GALLERY</a>
+                <div class="dropdown">
+                    <a href="#features">FEATURES</a>
+                    <div class="dropdown-content">
+                        <a href="#">TYPOGRAPHY</a>
+                        <a href="#">SHORT-CODES</a>
+                        <a href="#">PAGES</a>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <a href="#news">NEWS</a>
+                    <div class="dropdown-content">
+                        <div class="dropright">
+                            <a href="#">MASONRYSTYLE</a>
+                            <div class="dropright-content">
+                                <a href="#">FULL WIDTH</a>
+                                <a href="#">SIDEBAR RIGHT</a>
+                                <a href="#">SIDEBAR LEFT</a>
+                            </div>
+                        </div>
+                        <a href="#">GRID STYLE</a>
+                        <div class="dropright">
+                            <a href="#">SINGLESTYLE</a>
+                            <div class="dropright-content">
+                                <a href="#">IMAGE POST</a>
+                                <a href="#">GALLERY POST</a>
+                                <a href="#">VIDEO POST</a>
+                                <a href="#">SIDEBAR LEFT</a>
+                                <a href="#">SIDEBAR RIGHT</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#contact">CONTACT</a>
+                <div class="dropdown" onmouseover="myMegaMenuShow()" onmouseout="myMegaMenuHide()">
+                    <a id="megaMenu-btn">MEGAMENU</a>
+                    <div class="dropdown-megaMenu-content">
+                        <div class="row">
+                            <div class="column">
+                                <a href="#">HOME-RESORTE</a>
+                                <a href="#">HOME-SPA</a>
+                                <a href="#">HOME-VILlAA</a>
+                                <a href="#">HOME-BUSINESS</a>
+                            </div>
+                            <div class="column">
+                                <a href="#">RESERVATION</a>
+                                <a href="#">ROOMS3-COLUMNS</a>
+                                <a href="#">ROOMS2-COLUMNS</a>
+                                <a href="#">ROOMS1-COLUMNS</a>
+                                <a href="#">VILlAA-DETAILS</a>
+                                <a href="#">SINGLE-ROOM</a>
+                            </div>
+                            <div class="column">
+                                <a href="#">ABOUT THE HOTEL</a>
+                                <a href="#">FULL WIDTH</a>
+                                <a href="#">SIDEBAR RIGHT</a>
+                                <a href="#">SIDEBAR LEFT</a>
+                            </div>
+                            <div class="column" style="border-right: none">
+                                <a href="#">IMAGE POST</a>
+                                <a href="#">GALLERY POST</a>
+                                <a href="#">VIDEO POST</a>
+                                <a href="#">SIDEBAR LEFT</a>
+                                <a href="#">SIDEBAR RIGHT</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <input type="search" placeholder="Search" id="nav-search">
+                <i class="fa fa-search" style="color: #dedede"></i>
+            </div>
+            <a id="bookNow"><i>BOOK NOW</i></a>
+            <a class="icon" onclick="myIconBtn()">
+                <i id="navBtnIcon" class="fa fa-bars"></i>
+            </a>
+        </div>
+        <div class="slider">
+            <ul class="slider-content">
+                <li>
+                    <div class="sc">
+                        <img src="slider3/top-slider-img1.jpg">
+                        <div class="slider-content-container">
+                            <h1>Hotelier is Flexible Enough to be Used for Multiple Purposes</h1>
+                            <p>Hotelier has its roots as a hotel theme. And yet, its flexibility makes
+                                it useful for resorts, spas, villas. Even business. It’s supremely adaptable
+                                and easy to use.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="sc">
+                        <img src="slider3/top-slider-img2.jpg">
+                        <div class="slider-content-container">
+                            <h1>Hotelier is the Ultimate Template for Hotels, Resorts and Villas</h1>
+                            <p>Hotelier is built from the ground up with tons of innovative features that
+                                are designed to make it easy to create modern, stylish hotel-related websites.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="sc">
+                        <img src="slider3/top-slider-img3.jpg">
+                        <div class="slider-content-container">
+                            <h1>Hotelier is the Perfect Theme for All Types of Spas</h1>
+                            <p>Immerse visitors in the experience with sumptuous imagery.
+                                Give them a taste of what’s in store for them when they make an appointment.</p>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="sc">
+                        <img src="slider3/top-slider-img4.jpg">
+                        <div class="slider-content-container">
+                            <h1>Show Off Your Villa in Style</h1>
+                            <p>Hotelier is packed with features that enable you to quickly and easily
+                                create a modern, stylish website for your vacation villa or rental.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+</header>
+<main>
+    <section0>
+        <div class="welcome">
+            <h6>welcome</h6>
+            <h3>The Hotel at a Glance</h3>
+            <img src="slider3/cap.png">
+            <p> "Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+                Morbi versa accumsanipsum velit. Nam nec
+                tellus a odio tincidunt auctor a ornare odio.
+                Sed non mauris vitae erat consequat auctor eu in elit"
+            </p>
+        </div>
+    </section0>
+    <section1>
+        <div style="display: flex;justify-content: space-between;height: 320px;margin:7% 8%">
+            <div style="width: 53%;padding-right: 3%">
+                <h2 style="font-size:25px;font-family: 'Felix Titling';color: #535353;margin-bottom: 25px">THE PERFECT
+                    PLACE TO ESCAPE</h2>
+                <p style="font-size:15px;font-family:Arial;color:#535353;padding-bottom:30px;line-height: 30px">Duis sed
+                    odio sit amet nibh vulputate cursus a sit amet mauris. Morbi versa accumsan ipsum velit. Nam nec
+                    tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
+                    Class aptent taciti eu sociosqu ad litora torquent conubia per inceptos.</p>
+                <p style="font-size:15px;color:#535353;line-height: 30px">Mauris in erat justo nullam ac urna eu felis
+                    dapibus condimentum sit amet a augue. Sed non neque elit.
+                    Sed ut imperdiet nisi. Proin condimentum auctor fermentum nunc. Etiam pharetra, erat sed fermentum
+                    feugiat, velit egestas quam, ut aliquam massa nisl quis neque. </p>
+            </div>
+            <div style="width: 50%">
+                <video controls width="100%">
+                    <source src="Images/vid1.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </section1>
+    <section2>
+        <div class="accommodations">
+            <div class="welcome">
+                <h6>ACCOMMODATIONS</h6>
+                <h3>Our Rooms & Suites</h3>
+
+                <div class="hr">
+                    <hr>
+                    <img src="images/cap.png"></div>
+
+                <p> "Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi versa accumsan ipsum velit.
+                    Nam
+                    nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in
+                    elit"
+                </p>
+
+            </div>
+
+            <div class="photos">
+                <div class="photos-d" style="background-image: url(images/room-img1.jpg)">
+                    <div>
+                        <h2>Luxury level<br>room</h2>
+                        <p>Morbi versa accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+
+                    </div>
+                </div>
+                <div class="photos-d" style="background-image: url(images/room-img2.jpg)">
+                    <div>
+                        <h2>Luxury level<br>room</h2>
+                        <p>Morbi versa accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+                    </div>
+                </div>
+                <div class="photos-d" style="background-image: url(images/room-img3.jpg)">
+                    <div>
+                        <h2>ambassador level<br>suite</h2>
+                        <p>Morbi versa accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+                    </div>
+                </div>
+                <div class="photos-d" style="background-image: url(images/room-img4.jpg)">
+                    <div>
+                        <h2>ambassador level<br>suite</h2>
+                        <p>Morbi versa accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section2>
+    <section3>
+        <div class="section-5" style="margin-top: 75px">
+            <div class="section5Slider">
+                <img src="images/home-gal-img1.png" class="section-5-img">
+                <!-- <img class="ph" src="home-gal-img2.png">
+                <img class="ph" src="home-gal-img3.png"> -->
+            </div>
+            <div class="section5Hry">
+                <div class="section5HryContainer">
+                    <h2>Fine Dining Choices</h2>
+                    <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi versa accumsan ipsum velit
+                        nam
+                        nec
+                        tellus elit tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in
+                        elit.
+                        Class
+                        aptent taciti sociosqu ad litora torquent conubia per inceptos.</p>
+                    <p>Mauris in erat justo nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque
+                        elit.
+                        Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum
+                        feugiat,
+                        velit mauris egestas quam, ut aliquam massa nisl quis neque.</p>
+                    <button class="pre"><i class="fa fa-angle-left"></i></button>
+                    <button class="next"><i class="fa fa-angle-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section3>
+    <section4>
+        <div class="section-5" style="flex-direction: row-reverse">
+            <div class="section5Slider">
+                <img src="images/home-gal-img2.png" class="section-5-img">
+                <!-- <img class="ph" src="home-gal-img2.png">
+                        <img class="ph" src="home-gal-img3.png"> -->
+            </div>
+            <div class="section5Hry" style="margin-right:130px">
+                <div class="section5HryContainer">
+                    <h2>Pamper Yourself in the Spa</h2>
+                    <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi versa accumsan ipsum velit
+                        nam
+                        nec tellus elit tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in
+                        elit. Class aptent taciti sociosqu ad litora torquent conubia per inceptos.</p>
+                    <p>Mauris in erat justo nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque
+                        elit.
+                        Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum
+                        feugiat,
+                        velit mauris egestas quam, ut aliquam massa nisl quis neque.</p>
+                    <button class="pre"><i class="fa fa-angle-left"></i></button>
+                    <button class="next"><i class="fa fa-angle-right"></i></button>
+                </div>
+            </div>
+
+        </div>
+    </section4>
+    <section5>
+        <div class="section-5">
+            <div class="section5Slider">
+                <img src="images/home-gal-img3.png" class="section-5-img">
+                <!-- <img class="ph" src="home-gal-img2.png">
+                <img class="ph" src="home-gal-img3.png"> -->
+
+            </div>
+            <div class="section5Hry">
+                <div class="section5HryContainer">
+                    <h2>Let Us Entertain You</h2>
+                    <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi versa accumsan ipsum velit
+                        nam
+                        nec
+                        tellus elit tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in
+                        elit.
+                        Class
+                        aptent taciti sociosqu ad litora torquent conubia per inceptos.</p>
+                    <p>Mauris in erat justo nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque
+                        elit.
+                        Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum
+                        feugiat,
+                        velit mauris egestas quam, ut aliquam massa nisl quis neque.</p>
+                    <button class="pre"><i class="fa fa-angle-left"></i></button>
+                    <button class="next"><i class="fa fa-angle-right"></i></button>
+                </div>
+            </div>
+        </div>
+    </section5>
+    <section6>
+        <!-- learn more -->
+        <div style="position:relative;margin: 75px auto">
+            <div style="display:flex;height:150px;margin: 30px auto;width: 100%;">
+                <div style="width:50%"><img src="images/img1.png" width=100% alt="1"></div>
+                <div style="width:50%"><img src="images/img2.png" width="100%" alt="2"></div>
+            </div>
+            <a href="#" style="position:absolute;left: 45%;top: -15%;vertical-align: middle;
+    background-color: #00A39B;width: 130px;height: 45px;border-radius:30px;
+    font-family: 'TrajanProRegular';
+    font-size: 12px;color:white;border: none;text-decoration: none;text-align: center;">
+                <div class="aaa"><span style="margin-top:30px">LEARN MORE</span></div>
+
+            </a>
+        </div>
+    </section6>
+    <section7>
+        <div style="position: relative; margin:14% 14% 8% 14%">
+            <h2 style="text-align: center;color: #af9a5f;margin-bottom: 4%;font-family: 'Felix Titling'">ALL OF OUR
+                ROOMS OFFER THE FOLLOWING AMENITIES</h2>
+            <div style="display: flex;justify-content: space-between">
+                <div style="width: 40%">
+                    <ul style="list-style: none;line-height: 40px;color: #535353;font-family: Arial">
+                        <li><img src="slider3/cap.png" alt="cap">Sed odio sit amet nibh vulputate cursus</li>
+                        <li><img src="slider3/cap.png" alt="cap">Morbi versa accumsan ipsum velit</li>
+                        <li><img src="slider3/cap.png" alt="cap">Nam nec tellus a odio tincidunt auctor a ornare</li>
+                        <li><img src="slider3/cap.png" alt="cap">Sed non mauris vitae erat consequat</li>
+                        <li><img src="slider3/cap.png" alt="cap">Class aptent taciti sociosqu ad litora torquent</li>
+                    </ul>
+                </div>
+                <div style="width: 40%">
+                    <ul style="list-style: none;line-height: 40px;color: #535353;font-family: Arial">
+                        <li><img src="slider3/cap.png" alt="cap">Class aptent taciti sociosqu ad litora torquent</li>
+                        <li><img src="slider3/cap.png" alt="cap">Mauris in erat justo</li>
+                        <li><img src="slider3/cap.png" alt="cap">Nullam ac urna eu felis dapibus condimentum</li>
+                        <li><img src="slider3/cap.png" alt="cap">Proin condimentum fermentum nun</li>
+                        <li><img src="slider3/cap.png" alt="cap">Etiam pharetra, erat sed fermentum feugiat</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section7>
+    <section8>
+        <div style="display: flex;font-family:Arial;color:#535353;margin: 7% 8%">
+            <div style="width: 50%;text-align:justify;margin-right: 6%">
+                <h2 style="font-size: xx-large;margin-bottom: 25px;font-family: 'Felix Titling';font-weight: bolder">
+                    ACTIVITIES</h2>
+                <p style="font-size:15px;font-family:Arial;color:#535353;padding-bottom:30px;line-height: 30px">
+                    Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi versa accumsan ipsum velit.
+                    Nam nec
+                    tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
+                    Class aptent taciti eu sociosqu ad litora torquent conubia per inceptos.</p>
+                <div style="display: flex;justify-content: space-between;margin: auto 3%">
+                    <div>
+                        <ul style="line-height: 30px;list-style-type: none" class="listdot">
+                            <li>Golf</li>
+                            <li>Tennis</li>
+                            <li>Volleyball</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul style="line-height: 30px;list-style-type: none" class="listdot">
+                            <li>Racquetball</li>
+                            <li>Swimming Lessons</li>
+                            <li>Planned Excursions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 50%;text-align: justify">
+                <h2 style="font-size: xx-large;margin-bottom: 25px;font-family: 'Felix Titling';font-weight: bolder">
+                    EVEVTS</h2>
+                <p style="font-size:15px;font-family:Arial;color:#535353;padding-bottom:30px;line-height: 30px">
+                    Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi versa accumsan ipsum velit.
+                    Nam nec
+                    tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
+                    Class aptent taciti eu sociosqu ad litora torquent conubia per inceptos.</p>
+                <div style="display: flex;justify-content: space-between;margin: auto 3%">
+                    <div>
+                        <ul style="line-height: 30px;list-style-type: none" class="listdot">
+                            <li>Golf</li>
+                            <li>Tennis</li>
+                            <li>Volleyball</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul style="line-height: 30px;list-style-type: none" class="listdot">
+                            <li>Racquetball</li>
+                            <li>Swimming Lessons</li>
+                            <li>Planned Excursions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section8>
+    <section9>
+        <div style="margin:6% 14%">
+            <h5 style="text-align: center;color: #af9a5f;margin-bottom: 1%;font-weight: normal;font-family: Arial">
+                SERVICES</h5>
+            <div style="height: 300px;margin-right: 3%">
+                <div class="welcome" style="width:600px;padding-top:2%">
+                    <h3 style="font-size: 45px">We've Got You Covered</h3>
+                    <span style="margin-bottom:30px">__________<img src="slider3/cap.png"
+                                                                    style="position:relative;top:6px;margin:auto 4px">__________</span>
+                    <p> "Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+                        Morbi versa accumsanipsum velit. Nam nec
+                        tellus.Sed non mauris vitae eratNam nec
+                        tellus.Sed non mauris vitae eratNam nec
+                        tellus"
+                    </p>
+                </div>
+            </div>
+            <div style="display: flex;justify-content: space-between">
+                <div style="width: 40%">
+                    <ul style="list-style: none;line-height: 40px;color: #535353;font-family: Arial">
+                        <li><img src="slider3/cap.png" alt="cap">Sed odio sit amet nibh vulputate cursus</li>
+                        <li><img src="slider3/cap.png" alt="cap">Morbi versa accumsan ipsum velit</li>
+                        <li><img src="slider3/cap.png" alt="cap">Nam nec tellus a odio tincidunt auctor a ornare</li>
+                        <li><img src="slider3/cap.png" alt="cap">Sed non mauris vitae erat consequat</li>
+                        <li><img src="slider3/cap.png" alt="cap">Class aptent taciti sociosqu ad litora torquent</li>
+                        <li><img src="slider3/cap.png" alt="cap">Nam nec tellus a odio tincidunt auctor a ornare</li>
+                        <li><img src="slider3/cap.png" alt="cap">Nam nec tellus a odio tincidunt auctor a ornare</li>
+                        <li><img src="slider3/cap.png" alt="cap">Nam nec tellus a odio tincidunt auctor a ornare</li>
+
+                    </ul>
+                </div>
+                <div style="width: 40%">
+                    <ul style="list-style: none;line-height: 40px;color: #535353;font-family: Arial">
+                        <li><img src="slider3/cap.png" alt="cap">Class aptent taciti sociosqu ad litora torquent</li>
+                        <li><img src="slider3/cap.png" alt="cap">Mauris in erat justo</li>
+                        <li><img src="slider3/cap.png" alt="cap">Nullam ac urna eu felis dapibus condimentum</li>
+                        <li><img src="slider3/cap.png" alt="cap">Proin condimentum fermentum nun</li>
+                        <li><img src="slider3/cap.png" alt="cap">Etiam pharetra, erat sed fermentum feugiat</li>
+                        <li><img src="slider3/cap.png" alt="cap">Etiam pharetra, erat sed fermentum feugiat</li>
+                        <li><img src="slider3/cap.png" alt="cap">Etiam pharetra, erat sed fermentum feugiat</li>
+                        <li><img src="slider3/cap.png" alt="cap">Etiam pharetra, erat sed fermentum feugiat</li>
+                    </ul>
+                </div>
+            </div>
+            <div style="text-align:center;background-color: #00B2A9;width: 250px;padding: 15px 10px;border-radius: 30px;font-weight: bolder;margin: 7% 35% 5% 35%">
+                <a href="#">VIEW ALL SERVICES</a>
+            </div>
+        </div>
+    </section9>
+    <section10>
+        <div id="sec-back">
+            <div class="welcome" style="margin: 10% 15% 20% 15%;">
+                <h3 style="font-size:30px">We Make it Easy to Plan Your Stay</h3>
+                <span style="margin-bottom:30px;color:#464646">__________<img src="slider3/cap.png"
+                                                                              style="position:relative;top:6px;margin:auto 4px">__________</span>
+                <p> "Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+                    Morbi versa accumsanipsum velit. Nam nec
+                    tellus"
+                </p>
+                <div style="text-align:center;background-color: #00B2A9;width: 110px;padding: 15px 10px;border-radius: 30px;font-weight: bolder;margin: 4% 30% 10% 30%">
+                    <a href="#">DETAILS</a>
+                </div>
+            </div>
+        </div>
+    </section10>
+    <section11>
+        <div style="background-color:#333;margin:0;height: 300px;">
+            <div class="welcome" style="width:600px;background-color:#333;color: white;padding-top:5%">
+                <h3 style="color: white">Gallery</h3>
+                <span style="margin-bottom:30px;color:white">__________<img src="slider3/cap.png"
+                                                                            style="position:relative;top:6px;margin:auto 4px">__________</span>
+                <p style="color: white"> "Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+                    Morbi versa accumsanipsum velit. Nam nec
+                    tellus.Sed non mauris vitae erat"
+                </p>
+            </div>
+        </div>
+    </section11>
+    <section12>
+        <div style="background-color: #1a1a1a;height: 580px">
+            <div style="display:flex;width: 96%;justify-content: space-between;background-color:#1a1a1a;border-top: 3px solid #af9a5f;border-bottom: 3px solid #af9a5f;margin-bottom:10px;padding: 100px 2% 0px 2%"
+                 id="roomSec">
+                <div style="position: relative">
+                    <div class="welcome"
+                         style="width:300px;background-color: transparent;color: white;padding:0 0 5% 0;">
+                        <h3 style="color: white">Gallery</h3>
+                        <span style="margin-bottom:30px;color:white">__________<img src="slider3/cap.png"
+                                                                                    style="position:relative;top:6px;margin:auto 4px">__________</span>
+                        <p style="color: white"> "Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+                            Morbi versa accumsanipsum velit. Nam nec
+                            tellus.Sed non mauris vitae erat"
+                        </p>
+                    </div>
+                    <img src="slider3/top-slider-img1.jpg" style="position: absolute;top: 0%" alt="room pic">
+                </div>
+                <div style="position: relative">
+                    <div class="welcome"
+                         style="width:300px;background-color: transparent;color: white;padding:0 0 5% 0;">
+                        <h3 style="color: white">Gallery</h3>
+                        <span style="margin-bottom:30px;color:white">__________<img src="slider3/cap.png"
+                                                                                    style="position:relative;top:6px;margin:auto 4px">__________</span>
+                        <p style="color: white"> "Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+                            Morbi versa accumsanipsum velit. Nam nec
+                            tellus.Sed non mauris vitae erat"
+                        </p>
+                    </div>
+                    <img src="slider3/top-slider-img1.jpg" style="position: absolute;top: 0%" alt="room pic">
+                </div>
+                <div style="position: relative">
+                    <div class="welcome"
+                         style="width:300px;background-color: transparent;color: white;padding:0 0 5% 0;">
+                        <h3 style="color: white">Gallery</h3>
+                        <span style="margin-bottom:30px;color:white">__________<img src="slider3/cap.png"
+                                                                                    style="position:relative;top:6px;margin:auto 4px">__________</span>
+                        <p style="color: white"> "Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+                            Morbi versa accumsanipsum velit. Nam nec
+                            tellus.Sed non mauris vitae erat"
+                        </p>
+                    </div>
+                    <img src="slider3/top-slider-img1.jpg" style="position: absolute;top: 0%" alt="room pic">
+                </div>
+                <div style="position: relative">
+                    <div class="welcome"
+                         style="width:300px;background-color: transparent;color: white;padding:0 0 5% 0;">
+                        <h3 style="color: white">Gallery</h3>
+                        <span style="margin-bottom:30px;color:white">__________<img src="slider3/cap.png"
+                                                                                    style="position:relative;top:6px;margin:auto 4px">__________</span>
+                        <p style="color: white"> "Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+                            Morbi versa accumsanipsum velit. Nam nec
+                            tellus.Sed non mauris vitae erat"
+                        </p>
+                    </div>
+                    <img src="slider3/top-slider-img1.jpg" style="position: absolute;top: 0%" alt="room pic">
+                </div>
+            </div>
+            <div style="text-align:center;background-color: #00B2A9;width: 200px;padding: 15px 10px;border-radius: 30px;font-weight: bolder;margin: 4% 42% 4% 42%">
+                <a href="#">VIEW ALL ROOMS</a>
+            </div>
+        </div>
+    </section12>
+    <section13>
+        <div class="location">
+            <div class="location-title">
+                <h6>location</h6>
+                <h3>where to find us</h3>
+                <div class="hr">
+                    <hr><img src="images/cap.png">
+                </div>
+            </div>
+
+            <div class="map-container">
+                <div class="map" id="map" style=""></div>
+                <div class="map-hry" style="float:right">
+                    <table>
+                        <tr>
+                            <td class="td1">ADDRESS</td>
+                            <td class="td2">Hotel Fontainbleu 4332<br /> Lombard Street San<br /> Francisco, CA 10023 USA
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="td1">TELEPHONE</td>
+                            <td class="td2">(415) 899-3456</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">EMAIL</td>
+                            <td class="td2"><a href="mailto:someone@example.com?Subject=Hello%20again" target="_top" style="color: #9c8954;
+                                text-decoration: none">info@fontainbleu.com</a></td>
+                        </tr>
+                        <tr>
+                            <td class="td1">AIRPORT DISTANCE</td>
+                            <td class="td2">39km (24 miles) from San<br /> Francisco International<br /> Airport</td>
+                        </tr>
+                        <tr>
+                            <td class="td1">NEARBY</td>
+                            <td class="td2">39km (24 miles) from San<br /> Francisco International<br /> Airport</td>
+                        </tr>
+                    </table>
+
+                </div>
+            </div>
+        </div>
+    </section13>
+</main>
+<footer>
+    <section>
+        <div id="footerContainer"
+             style="background-color: #464646;display: flex;padding:4% 6%;width: 88%;justify-content: space-between;color: #cfcfcf">
+            <div style="line-height: 30px;background-color: #464646;width: 23%">
+                <div style="text-align: center">
+                    <i class="fa fa-crown" style="color: #AF9A5F"></i>
+                    <h3 style="margin-bottom: 7%;color: white">HOTELLER</h3>
+                </div>
+                <div style="display: flex">
+                    <p style="align-self: flex-start;margin-right: 5%">ADDRESS</p>
+                    <p style="align-self: flex-end">Hotel Fontainbleu 4332 Lombard Street San Francisco, CA 10023
+                        USA</p>
+
+                </div>
+                <div style="display: flex">
+                    <p style="align-self: flex-start;margin-right: 11%">PHONE</p>
+                    <p style="align-self: flex-end">(415) 899-3456</p>
+
+                </div>
+                <div style="display: flex">
+                    <p style="align-self: flex-start;margin-right: 18.5%">FAX</p>
+                    <p style="align-self: flex-end">(415) 899-3456</p>
+
+                </div>
+                <div style="display: flex">
+                    <p style="align-self: flex-start;margin-right: 11%">EMAIL</p>
+                    <p style="align-self: flex-end"><a href="mailto:someone@yoursite.com">info@fontainbleu.com</a></p>
+
+                </div>
+            </div>
+            <div style="line-height:10px;background-color: #464646;width: 23%;margin-top: .5%">
+                <h3 style="margin-bottom: 7%;color: #AF9A5F">SITE LINKS</h3>
+                <div style="display: flex;flex-direction: column;margin-bottom: 20%" id="siteLinks">
+                    <a href="#"> Accommodations</a>
+                    <a href="#">Dining</a>
+                    <a href="#">Spa</a>
+                    <a href="#">Activities</a>
+                    <a href="#">News</a>
+                    <a href="#">Careers</a>
+                </div>
+                <h3 style="margin-bottom: 7%;color: #AF9A5F">LATEST TWEETS</h3>
+            </div>
+            <div style="background-color: #464646;width: 23%">
+                <h3 style="margin-bottom: 7%;color: #AF9A5F">STAY UP TO DATE</h3>
+                <p style="margin-bottom: 7%">Sign up for our newsletter</p>
+                <div style="display: flex;margin-bottom: 9%">
+                    <input type="email" name="email" placeholder="Enter Your Email" pattern="^\w+@[a-zA-Z]+?\.[a-zA-Z]{2,3}$"
+                           oninvalid="this.setCustomValidity('Ektb Tany Kda ya 3m')" oninput="this.setCustomValidity('') "
+                           style="padding-left:4px;align-self:self-start;background-color: transparent;border: 1px solid #cfcfcf;height: 30px;" >
+                    <i class="fa fa-envelope"
+                       style="align-self:self-end;background-color: #00B2A9;width: 50px;height: 32px;"></i>
+                </div>
+                <h3 style="margin-bottom: 7%;color: #AF9A5F">LET'S SOCIALIZE</h3>
+                <div style="display: flex;margin-bottom: 10%" id="letsSocialize">
+                    <a href="#"><i class="fa fa-twitter"></i></a>
+                    <a href="#"><i class="fa fa-facebook"></i></a>
+                    <a href="#"><i class="fa fa-instagram"></i></a>
+                    <a href="#"><i class="fa fa-google-plus"></i></a>
+                    <a href="#"><i class="fa fa-youtube"></i></a>
+                </div>
+                <h3 style="margin-bottom: 3%;color: #AF9A5F">DID YOU ENJOY YOUR STAY?</h3>
+                <P>Please,tell us about it on!</P>
+
+            </div>
+            <div style="background-color: #464646;width: 23%">
+                <h3 style="margin-bottom: 7%;color: #AF9A5F">CONTACT US</h3>
+                <div style="display: flex;flex-direction: column">
+                    <form action="#">
+                        <input type="text" name="name" placeholder="NAME" pattern="^[a-zA-Z]+$"
+                               oninvalid="this.setCustomValidity('Ektb Tany Kda ya 3m')" oninput="this.setCustomValidity('') "
+                               style="padding-left:4px;margin-bottom: 5%;background-color: transparent;border: 1px solid #cfcfcf;height: 30px;" required>
+                        <input type="email" name="email" placeholder="EMAIL ADDRESS"  pattern="^\w+@[a-zA-Z]+?\.[a-zA-Z]{2,3}$"
+                               oninvalid="this.setCustomValidity('Ektb Tany Kda ya 3m')" oninput="this.setCustomValidity('') "
+                               style="padding-left:4px;margin-bottom: 5%;background-color: transparent;border: 1px solid #cfcfcf;height: 30px;" required>
+                        <textarea name="message" id="" cols="30" rows="7" placeholder="MESSAGE"
+                                  style="padding-left:4px;margin-bottom: 5%;background-color: transparent;border: 1px solid #cfcfcf;" required></textarea>
+                        <input type="submit" name="submit" value="SUBMIT"
+                               style="border:none;width: 100px;height: 50px;background-color: #00B2A9;border-radius: 5px;color: #e7e7e7">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div style="background-color: #464646;color: #e7e7e7;padding: 1%;display: flex;justify-content: space-between">
+            <div>
+                <a href="#">Privacy Policy</a><span>|</span>
+                <a href="#">Legal Notices</a><span>|</span>
+                <a href="#">Premium Excursion</a>
+            </div>
+            <div>
+                &copy;Hoteller Premium 2001-2019.All Rights Reserved.
+            </div>
+        </div>
+    </section>
+</footer>
+<script src="all.min.js"></script>
+<script src="Hoteller.js"></script>
+</body>
+</html>

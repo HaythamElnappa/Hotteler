@@ -1,0 +1,4 @@
+- *page* make page responsive --> not solved
+- *slider* the annimation with slider in header section --> sloved by using css3 without javaScript
+- *location* in mab section api map key are not working --> not solved
+  

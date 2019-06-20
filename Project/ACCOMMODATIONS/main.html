@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .accommodations {
+            width: 100%;
+            padding: 68px 0 31px 0;
+            background-color: #ece7dd;
+        }
+
+
+        .welcome {
+            display: flex;
+            text-align: center;
+            margin-top: 20px;
+            flex-direction: column;
+            width: 50%;
+            margin: auto;
+            padding-top: 40px;
+        }
+
+        .welcome h6 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            line-height: 14px;
+            color: #af9a5f;
+            font-weight: 400;
+            text-transform: uppercase;
+            padding-bottom: 22px;
+        }
+
+        .welcome h3 {
+            font-family: 'TrajanProRegular';
+            font-size: 38px;
+            line-height: 38px;
+            color: #333333;
+            font-weight: 500;
+            padding-bottom: 28px;
+            text-transform: uppercase;
+        }
+
+        hr {
+            border: none;
+            border: 1px solid #d7d7d7;
+        }
+
+        .hr {
+            text-align: center;
+            width: 300px;
+            margin-left: 184px;
+        }
+
+        .hr img {
+            position: relative;
+            top: -11px;
+            background: #ece7dd;
+            padding: 0 5px;
+        }
+
+        .welcome p {
+            font-family: 'Vollkorn', serif;
+            font-size: 18px;
+            line-height: 30px;
+            color: #333333;
+            font-style: italic;
+            font-weight: 400;
+            padding: 0 28px;
+        }
+
+        /* ________________________________________________________________________________________ */
+
+        .photos {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .photos .photos-d {
+            width: 24%;
+            margin-left: 10px;
+            margin-right: 10px;
+            background-size: cover;
+            height: 300px;
+            overflow: hidden;
+        }
+
+        .photos-d div {
+            width: 100%;
+            height: 100%;
+            transition: 0.6s;
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            margin-top: 238px;
+            animation-duration: 2s;
+        }
+
+        .photos-d div:hover {
+            margin-top: 20px;
+            background-color: rgba(175, 154, 95, 0.9);
+        }
+
+        .photos-d div h2 {
+            font-family: 'TrajanProRegular';
+            font-size: 24px;
+            line-height: 31px;
+            color: #fff;
+            font-weight: 400;
+            transition: .4s;
+            text-transform: uppercase;
+            margin-left: 20px;
+        }
+
+        .photos-d div p {
+            font-size: 12px;
+            line-height: 17px;
+            color: #ffffff;
+            display: block;
+            padding-right: 15%;
+            margin-left: 20px;
+        }
+
+        /* ______________________________________________________________________________________ */
+
+        .section-5 {
+            display: flex;
+            background-color: #e3ded3;
+            height: 474.266px;
+
+        }
+
+        .section5Slider {
+            width: 60%;
+        }
+
+        .section5Slider img {
+            max-width: 100%;
+        }
+
+
+        .section5Hry {
+            width: 30%;
+        }
+
+        .section5HryContainer {
+            margin-left: 50px;
+            margin-top: 24px;
+        }
+
+        .section5HryContainer h2 {
+            font-family: 'TrajanProBold';
+            font-size: 27px;
+            line-height: 28px;
+            color: #333333;
+            padding-bottom: 40px;
+        }
+
+        .section5HryContainer p {
+            font-family: 'Roboto', sans-serif;
+            font-size: 13px;
+            line-height: 25px;
+            color: #333333;
+            font-weight: 400;
+            padding-bottom: 25px;
+        }
+
+        /* ______________________________________________________________________________________________ */
+
+        .aaa {
+            padding-top: 15px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="accommodations">
+        <div class="welcome">
+            <h6>ACCOMMODATIONS</h6>
+            <h3>Our Rooms & Suites</h3>
+
+            <div class="hr">
+                <hr><img src="cap.png"></div>
+
+            <p> "Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi versa accumsan ipsum velit. Nam
+                nec tellus a odio tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit"
+            </p>
+
+        </div>
+
+        <div class="photos">
+            <div class="photos-d" style="background-image: url(room-img1.jpg)">
+                <div>
+                    <h2>Luxury level<br>room</h2>
+                    <p>Morbi versa accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+
+                </div>
+            </div>
+            <div class="photos-d" style="background-image: url(room-img2.jpg)">
+                <div>
+                    <h2>Luxury level<br>room</h2>
+                    <p>Morbi versa accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+                </div>
+            </div>
+            <div class="photos-d" style="background-image: url(room-img3.jpg)">
+                <div>
+                    <h2>ambassador level<br>suite</h2>
+                    <p>Morbi versa accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+                </div>
+            </div>
+            <div class="photos-d" style="background-image: url(room-img4.jpg)">
+                <div>
+                    <h2>ambassador level<br>suite</h2>
+                    <p>Morbi versa accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- ____________________________________________________________________________________________________________________ -->
+
+
+    <div class="section-5">
+        <div class="section5Slider">
+            <img src="home-gal-img1.png" class = "section-5-img">
+            <!-- <img class="ph" src="home-gal-img2.png">
+            <img class="ph" src="home-gal-img3.png"> -->
+
+        </div>
+        <div class="section5Hry">
+            <div class="section5HryContainer">
+                <h2>Fine Dining Choices</h2>
+                <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi versa accumsan ipsum velit nam
+                    nec
+                    tellus elit tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
+                    Class
+                    aptent taciti sociosqu ad litora torquent conubia per inceptos.</p>
+                <p>Mauris in erat justo nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque
+                    elit.
+                    Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat,
+                    velit mauris egestas quam, ut aliquam massa nisl quis neque.</p>
+
+                <button class="next">Next</button>
+                <button class="pre">Previous</button>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="section-5" style="flex-direction: row-reverse">
+
+        <div class="section5Slider">
+            <img src="home-gal-img2.png" class = "section-5-img">
+            <!-- <img class="ph" src="home-gal-img2.png">
+                    <img class="ph" src="home-gal-img3.png"> -->
+
+        </div>
+
+        <div class="section5Hry" style="margin-right:130px">
+            <div class="section5HryContainer">
+                <h2>Pamper Yourself in the Spa</h2>
+                <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi versa accumsan ipsum velit nam
+                    nec tellus elit tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in
+                    elit. Class aptent taciti sociosqu ad litora torquent conubia per inceptos.</p>
+                <p>Mauris in erat justo nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque
+                    elit.
+                    Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat,
+                    velit mauris egestas quam, ut aliquam massa nisl quis neque.</p>
+
+                <button class="next">Next</button>
+                <button class="pre">Previous</button>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="section-5">
+        <div class="section5Slider">
+            <img src="home-gal-img3.png" class = "section-5-img">
+            <!-- <img class="ph" src="home-gal-img2.png">
+            <img class="ph" src="home-gal-img3.png"> -->
+
+        </div>
+        <div class="section5Hry">
+            <div class="section5HryContainer">
+                <h2>Let Us Entertain You</h2>
+                <p>Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi versa accumsan ipsum velit nam
+                    nec
+                    tellus elit tincidunt auctor a ornare odio. Sed non mauris vitae erat consequat auctor eu in elit.
+                    Class
+                    aptent taciti sociosqu ad litora torquent conubia per inceptos.</p>
+                <p>Mauris in erat justo nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque
+                    elit.
+                    Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat,
+                    velit mauris egestas quam, ut aliquam massa nisl quis neque.</p>
+
+                <button class="next">Next</button>
+                <button class="pre">Previous</button>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- __________________________________________________________________________________________________________ -->
+    <!-- learn more -->
+    <section>
+        <div style="position:relative">
+            <div style="display:flex;height:150px;margin: 30px auto;width: 100%;">
+                <div style="width:50%"><img src="img1.png" width=100% alt="1"></div>
+                <div style="width:50%"><img src="img2.png" width="100%" alt="2"></div>
+            </div>
+            <a href="#" style="position:absolute;left: 45%;top: -15%;vertical-align: middle;
+    background-color: #00A39B;width: 130px;height: 45px;border-radius:30px;
+    font-family: 'TrajanProRegular';
+    font-size: 12px;color:white;border: none;text-decoration: none;text-align: center;">
+                <div class="aaa"><span style="margin-top:30px">LEARN MORE</span></div>
+
+            </a>
+        </div>
+    </section>
+    <!-- _________________________________________________________________________________________________ -->
+    <script src="all.min.js"></script>
+    <script>
+        var next = document.querySelectorAll(".next");
+        var pre = document.querySelectorAll(".pre");
+        var section5Slider = document.querySelector(".section5Slider");
+        var array = ["home-gal-img1.png", "home-gal-img2.png", "home-gal-img3.png"];
+        var img = document.querySelectorAll(".section-5-img");
+        var index = array.indexOf(img.src);
+
+        next[0].addEventListener('click', function (e) {
+            if (index == 2) { index = -1 }
+            while (index < array.length - 1) {
+                img[0].src = array[++index];
+                break;
+            }
+
+        });
+
+        pre[0].addEventListener('click', function (e) {
+            if (index == 0) { index = 3 }
+            while (index > 0) {
+                img[0].src = array[--index];
+                break;
+            }
+
+        });
+
+        next[1].addEventListener('click', function (e) {
+            if (index == 2) { index = -1 }
+            while (index < array.length - 1) {
+                img[1].src = array[++index];
+                break;
+            }
+
+        });
+
+        pre[1].addEventListener('click', function (e) {
+            if (index == 0) { index = 3 }
+            while (index > 0) {
+                img[1].src = array[--index];
+                break;
+            }
+
+        });
+
+        next[2].addEventListener('click', function (e) {
+            if (index == 2) { index = -1 }
+            while (index < array.length - 1) {
+                img[2].src = array[++index];
+                break;
+            }
+
+        });
+
+        pre[2].addEventListener('click', function (e) {
+            if (index == 0) { index = 3 }
+            while (index > 0) {
+                img[2].src = array[--index];
+                break;
+            }
+
+        });
+
+        // function showDiv(n) {
+        //     for (var i = 0; i < ph.length; i++) {
+        //         ph[i].style.display = "none";
+        //     }
+        //     ph[n - 1].style.display = "block";
+        // }
+        // showDiv(1);
+    </script>
+</body>
+
+</html>

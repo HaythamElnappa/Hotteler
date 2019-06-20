@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .slider-content img {
+            width: 110vw;
+            height: 100vh;
+            background-size: cover;
+            display: block;
+        }
+
+        .slider {
+            overflow-x: hidden;
+        }
+
+        .slider-content {
+            list-style: none;
+            display: flex;
+            animation: slide 10s ease-in-out infinite;
+
+        }
+
+        .slider-content:hover {
+            -webkit-animation-play-state: paused;
+        }
+
+        .sc {
+            position: relative;
+        }
+
+        .slider-content-container {
+            position: absolute;
+            top: 40%;
+            left: 18%;
+            text-align: center;
+        }
+
+        .slider-content-container h1 {
+            background-color: rgba(51, 51, 51, 0.8);
+            font-family: 'TrajanProBold';
+            font-size: 40px;
+            line-height: 40px;
+            color: white;
+            width: 75%;
+            height: 14%;
+            padding-top: 18px;
+            margin-top: 40px;
+        }
+
+        .slider-content-container p {
+            background-color: rgba(246, 240, 228, 0.8);
+            font-family: 'Vollkorn', serif;
+            font-weight: 400;
+            font-style: italic;
+            font-size: 18px;
+            line-height: 25px;
+            width: 61%;
+            height: 12%;
+            padding-top: 18px;
+            margin-left: 70px;
+        }
+
+        /* ________________________________________________________________________________________________________ */
+
+        .welcome {
+            display: flex;
+            text-align: center;
+            margin-top: 20px;
+            flex-direction: column;
+            width: 50%;
+            margin: auto;
+            padding-top: 40px;
+        }
+
+        .welcome h6 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            line-height: 14px;
+            color: #af9a5f;
+            font-weight: 400;
+            text-transform: uppercase;
+            padding-bottom: 22px;
+        }
+
+        .welcome h3 {
+            font-family: 'TrajanProRegular';
+            font-size: 38px;
+            line-height: 38px;
+            color: #333333;
+            font-weight: 500;
+            padding-bottom: 28px;
+            text-transform: uppercase;
+        }
+
+        .welcome img {
+            margin: auto;
+            max-width: 100%;
+        }
+
+        .welcome p {
+            font-family: 'Vollkorn', serif;
+            font-size: 18px;
+            line-height: 30px;
+            color: #333333;
+            font-style: italic;
+            font-weight: 400;
+            padding: 0 28px;
+        }
+
+        /* _________________________________________________________________________________________________________________________________ */
+
+
+        @keyframes slide {
+            10% {
+                transform: translateX(0);
+            }
+
+            15%,
+            30% {
+                transform: translateX(-1515px);
+            }
+
+            35%,
+            50% {
+                transform: translateX(-3030px);
+            }
+
+            55%,
+            70% {
+                transform: translateX(-4545px);
+            }
+
+            75%,
+            90% {
+                transform: translateX(0);
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="slider">
+        <ul class="slider-content">
+            <li>
+                <div class="sc">
+                    <img src="top-slider-img1.jpg">
+                    <div class="slider-content-container">
+                        <h1>Hotelier is Flexible Enough to be Used for Multiple Purposes</h1>
+                        <p>Hotelier has its roots as a hotel theme. And yet, its flexibility makes
+                            it useful for resorts, spas, villas. Even business. It’s supremely adaptable
+                            and easy to use.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="sc">
+                    <img src="top-slider-img2.jpg">
+                    <div class="slider-content-container">
+                        <h1>Hotelier is the Ultimate Template for Hotels, Resorts and Villas</h1>
+                        <p>Hotelier is built from the ground up with tons of innovative features that
+                            are designed to make it easy to create modern, stylish hotel-related websites.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="sc">
+                    <img src="top-slider-img3.jpg">
+                    <div class="slider-content-container">
+                        <h1>Hotelier is the Perfect Theme for All Types of Spas</h1>
+                        <p>Immerse visitors in the experience with sumptuous imagery.
+                            Give them a taste of what’s in store for them when they make an appointment.</p>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="sc">
+                    <img src="top-slider-img4.jpg">
+                    <div class="slider-content-container">
+                        <h1>Show Off Your Villa in Style</h1>
+                        <p>Hotelier is packed with features that enable you to quickly and easily
+                            create a modern, stylish website for your vacation villa or rental.
+                        </p>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+    <!-- ________________________________________________________________________________________________________________ -->
+
+    <div class="welcome">
+        <h6>welcome</h6>
+        <h3>The Hotel at a Glance</h3>
+        <img src="cap.png">
+        <p> "Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
+            Morbi versa accumsanipsum velit. Nam nec
+            tellus a odio tincidunt auctor a ornare odio.
+            Sed non mauris vitae erat consequat auctor eu in elit"
+        </p>
+
+    </div>
+</body>
+
+</html>

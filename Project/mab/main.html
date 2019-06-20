@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .location {
+            background-color: #f9f5ec;
+        }
+
+        .location-title {
+            display: flex;
+            text-align: center;
+            margin-top: 20px;
+            flex-direction: column;
+            width: 50%;
+            margin: auto;
+            padding-top: 40px;
+        }
+
+        .location-title h6 {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            line-height: 14px;
+            color: #af9a5f;
+            font-weight: 400;
+            text-transform: uppercase;
+            padding-bottom: 22px;
+        }
+
+        .location-title h3 {
+            font-family: 'TrajanProRegular';
+            font-size: 38px;
+            line-height: 38px;
+            color: #333333;
+            font-weight: 500;
+            padding-bottom: 28px;
+            text-transform: uppercase;
+        }
+
+        hr {
+            border: none;
+            border: 1px solid #d7d7d7;
+        }
+
+        .hr {
+            text-align: center;
+            width: 300px;
+            margin-left: 225px;
+        }
+
+        .hr img {
+            position: relative;
+            top: -11px;
+            background: #f9f5ec;
+            padding: 0 5px;
+        }
+
+        /* _____________________________________________________________________________________ */
+
+
+        .map-container {
+            display: flex;
+            width: 80%;
+            margin: 20px auto
+        }
+
+        .map {
+            width: 600px;
+            height: 425px;
+            float: left;
+            margin-left: 20px;
+            border: 1px solid #af9a5f;
+        }
+
+        td {
+            /* padding: 9px 9px */
+            padding: 9px;
+            padding-left: 14px;
+        }
+
+        .td1 {
+            vertical-align: top;
+            font-family: 'TrajanProBold';
+            font-size: 13px;
+            line-height: 13px;
+            text-transform: uppercase;
+            color: #333333;
+        }
+
+        .td2 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 18px;
+            color: #464646;
+            vertical-align: top;
+            height: 53.125px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="location">
+        <div class="location-title">
+            <h6>location</h6>
+            <h3>where to find us</h3>
+            <div class="hr">
+                <hr><img src="cap.png">
+            </div>
+        </div>
+
+        <div class="map-container">
+            <div class="map" id="map" style=""></div>
+            <div class="map-hry" style="float:right">
+                <table>
+                    <tr>
+                        <td class="td1">ADDRESS</td>
+                        <td class="td2">Hotel Fontainbleu 4332<br /> Lombard Street San<br /> Francisco, CA 10023 USA
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="td1">TELEPHONE</td>
+                        <td class="td2">(415) 899-3456</td>
+                    </tr>
+                    <tr>
+                        <td class="td1">EMAIL</td>
+                        <td class="td2"><a href="mailto:someone@example.com?Subject=Hello%20again" target="_top" style="color: #9c8954;
+                                text-decoration: none">info@fontainbleu.com</a></td>
+                    </tr>
+                    <tr>
+                        <td class="td1">AIRPORT DISTANCE</td>
+                        <td class="td2">39km (24 miles) from San<br /> Francisco International<br /> Airport</td>
+                    </tr>
+                    <tr>
+                        <td class="td1">NEARBY</td>
+                        <td class="td2">39km (24 miles) from San<br /> Francisco International<br /> Airport</td>
+                    </tr>
+                </table>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script>
+
+        window.navigator.geolocation.getCurrentPosition(succes, fail)
+
+        function succes(position) {
+            initMap(position.coords)
+        }
+
+
+        function fail(e) {
+            alert(e.message);
+
+        }
+        // _____________________________________________________________________________________
+
+        var map;
+        function initMap(e) {
+            map = new google.maps.Map(document.getElementById('map'), {
+                center: { lat: e.latitude, lng: e.longitude },
+                zoom: 8
+            });
+        }
+
+    </script>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=key=AIzaSyBJLQdul-88M-n-KXaDx4_8F6TJdqQwrvA" async
+        defer></script>
+</body>
+
+</html>
